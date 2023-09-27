@@ -2,15 +2,14 @@
 
 1.  Crear un entorno virtual, hay muchas formas
 
-    Opción 1: Crear entorno virtual con el paquete virtualenv
-    Si no tienes instalado virtualenv puedes instalarlo de forma global en el sistema atraves de
-    https://pypi.org/project/virtualenv/
-    pip install virtualenv ->Instalar de forma global
-    virtualenv env ->Crear entorno
-    virtualenv --version ->Ver la versión de virtualenv
+        Opción 1: Crear entorno virtual con el paquete virtualenv
+        Si no tienes instalado virtualenv puedes instalarlo de forma global en el sistema atraves de https://pypi.org/project/virtualenv/
+        pip install virtualenv ->Instalar de forma global
+        virtualenv env ->Crear entorno
+        virtualenv --version ->Ver la versión de virtualenv
 
-    Opción 2: Crear un entorno virtual con el paquete que ya viene por defecto en las ultimas versiones de Python
-    python -m venv env
+        Opción 2: Crear un entorno virtual con el paquete que ya viene por defecto en las ultimas versiones de Python
+        python -m venv env
 
 2.  Activar entorno virtual
     . env/Script/activate ->para Windows
@@ -19,19 +18,18 @@
 
 3.  Instalar Djando desde el manejador de paquete de Python Pip, ya dentro del entorno virtual.
 
-    python -m pip install Django
-    pip install Django
-    Nota: para instalar Django en una version especifica
-    pip install Django==4.2.4
+        python -m pip install Django
+        pip install Django
+        Nota: para instalar Django en una version especifica
+        pip install Django==4.2.4
 
 4.  Ver la versión de Djando instalada en el proyecto
 
-    python -m django --version
+        python -m django --version
 
-5.  Instalar Driver (paquete - libreria - modulo, driver) para conectar Gestor de BD MySQL con Django,
-    hay varias para elejir sin embargo los más populares y los más rápidos son mysqlclient y pymysql
+5.  Instalar Driver (paquete - libreria - modulo, driver) para conectar Gestor de BD MySQL con Django, hay varias para elejir sin embargo los más populares y los más rápidos son mysqlclient y pymysql
 
-    pip install mysqlclient
+        pip install mysqlclient
 
 6.  Crear el proyecto con Djando
     django-admin startproject project_django_mysql .
@@ -48,27 +46,26 @@
 
 8.  Editar el archivo settings.py del proyecto, cambiando los parametros de conexión a MySQL
 
-`   DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.mysql', #ENGINE es motor de BD
-            'NAME': 'bd_django_mysql',
-            'USER': 'root',
-            'PASSWORD': '',
-            'HOST': 'localhost',
-            'PORT': '3306',
-        }
-    }`
+    `  DATABASES = {
+		'default': {
+			'ENGINE': 'django.db.backends.mysql', #ENGINE es motor de BD
+			'NAME': 'bd_django_mysql',
+			'USER': 'root',
+			'PASSWORD': '',
+			'HOST': 'localhost',
+			'PORT': '3306',
+		}
+	}`
 
-10. Crear la Base de Datos en MySQL ((bd_django_mysql))
+9.  Crear la Base de Datos en MySQL ((bd_django_mysql))
 
-11. Correr migraciones
-
+10. Correr migraciones
     python manage.py migrate
 
-12. Correr el proyecto de Django
+11. Correr el proyecto de Django
 
-    python manage.py runserver
-    Revisar la consola y visitar la URL http://127.0.0.1:8000
+        python manage.py runserver
+        Revisar la consola y visitar la URL http://127.0.0.1:8000
 
 #### COMANDO ADICIONALES:
 
