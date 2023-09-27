@@ -12,9 +12,10 @@
         python -m venv env
 
 2.  Activar entorno virtual
-    . env/Script/activate ->para Windows
-    . env/bin/activate -> Para Mac
-    deactivate -->Para desactivar mi entorno virtual
+
+        . env/Script/activate ->para Windows
+        . env/bin/activate -> Para Mac
+        deactivate -->Para desactivar mi entorno virtual
 
 3.  Instalar Djando desde el manejador de paquete de Python Pip, ya dentro del entorno virtual.
 
@@ -32,35 +33,39 @@
         pip install mysqlclient
 
 6.  Crear el proyecto con Djando
-    django-admin startproject project_django_mysql .
-    El punto . es crucial porque le dice al script que instale Django en el directorio actual.
 
-    Ya en este punto se puede correr el proyecto que a creado Django,
-    python manage.py runserver
+        django-admin startproject project_django_mysql .
+        El punto . es crucial porque le dice al script que instale Django en el directorio actual.
+
+        Ya en este punto se puede correr el proyecto que a creado Django,
+        python manage.py runserver
 
 7.  Crear el archivo requirements.txt para tener todos los paquetes del proyecto a la mano
-    pip freeze > requirements.txt
 
-    Nota: para instalar los paquetes solo basta ejecutar
-    pip install -r requirements.txt
+        pip freeze > requirements.txt
+
+        Nota: para instalar los paquetes solo basta ejecutar
+        pip install -r requirements.txt
 
 8.  Editar el archivo settings.py del proyecto, cambiando los parametros de conexión a MySQL
 
-    `  DATABASES = {
-		'default': {
-			'ENGINE': 'django.db.backends.mysql', #ENGINE es motor de BD
-			'NAME': 'bd_django_mysql',
-			'USER': 'root',
-			'PASSWORD': '',
-			'HOST': 'localhost',
-			'PORT': '3306',
-		}
-	}`
+        `  DATABASES = {
+        'default': {
+        	'ENGINE': 'django.db.backends.mysql', #ENGINE es motor de BD
+        	'NAME': 'bd_django_mysql',
+        	'USER': 'root',
+        	'PASSWORD': '',
+        	'HOST': 'localhost',
+        	'PORT': '3306',
+        }
+
+    }`
 
 9.  Crear la Base de Datos en MySQL ((bd_django_mysql))
 
 10. Correr migraciones
-    python manage.py migrate
+
+        python manage.py migrate
 
 11. Correr el proyecto de Django
 
@@ -69,12 +74,15 @@
 
 #### COMANDO ADICIONALES:
 
-1. ver todo el historial de migraciones:
-   python manage.py showmigrations
+1.  ver todo el historial de migraciones:
 
-2. listar paquetes del instalador en el proyecto
-   pip list
-   pip freeze
+        python manage.py showmigrations
 
-3. Correr archivo requirement.txt
-   pip install -r requirements.txt
+2.  listar paquetes del instalador en el proyecto
+
+        pip list
+        pip freeze
+
+3.  Correr archivo requirement.txt
+
+        pip install -r requirements.txt
