@@ -1,0 +1,34 @@
+conectar base de datos mysql con django
+Como usar Django con una base de datos ya existente en MySQL
+
+django mysql
+django mysqlclient
+mysql connector django
+conectar django con postgresql
+conectar django a una base de datos
+configurar base de datos mysql en django
+Conecta tu proyecto con la base de datos MySQL
+Conectar Django con MySQL
+How to integrate Mysql database with Django
+Python Django
+Conectar MySQL con Django - Tutorial
+Curso de Django: Configurar conexión con MySQL
+Cómo usar MySQL en Django 4.1
+Django — Conecta tu proyecto con la base de datos MySQL
+Conectar Django con MySQL y PostgreSQL
+¿Cómo conectar Django con Mysql Server?
+Usar Django con MySQL
+Configurar y conectar una base de datos en un proyecto
+Conectar Django a la base de datos MySQL
+Conectar Mysql con Python & Django
+Conexión a la base de datos MySQL
+¿Como usar Django con una base de datos ya existente
+Como instalar Django con MySQL/PostgreSQL
+Conexión MySQL y Django
+Instalar Mysql con Python y Django
+9.4 Connector/Python Django Back End
+How to integrate Mysql database with Django
+Backend con Django RestFramework Python
+Instalación de Python, Django y MySQL
+Desplegar un proyecto de Django en PythonAnywhere
+How to Connect Django to MySQL
