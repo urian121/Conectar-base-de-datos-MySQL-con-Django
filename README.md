@@ -49,17 +49,18 @@
 
 8.  Editar el archivo settings.py del proyecto, cambiando los parametros de conexión a MySQL
 
-        `  DATABASES = {
-        'default': {
-        	'ENGINE': 'django.db.backends.mysql', #ENGINE es motor de BD
-        	'NAME': 'bd_django_mysql',
-        	'USER': 'root',
-        	'PASSWORD': '',
-        	'HOST': 'localhost',
-        	'PORT': '3306',
+        `
+        DATABASES = {
+                'default': {
+                        'ENGINE': 'django.db.backends.mysql', #ENGINE es motor de BD
+                        'NAME': 'bd_django_mysql',
+                        'USER': 'root',
+                        'PASSWORD': '',
+                        'HOST': '127.0.0.1',
+                        'PORT': '3306',
+                }
         }
-
-    }`
+        `
 
 9.  Crear la Base de Datos en MySQL ((bd_django_mysql))
 
@@ -71,6 +72,10 @@
 
         python manage.py runserver
         Revisar la consola y visitar la URL http://127.0.0.1:8000
+
+#### Resultado Final
+
+![](https://raw.githubusercontent.com/urian121/imagenes-proyectos-github/master/conectar%20mysql%20con%20Django.png)
 
 #### COMANDO ADICIONALES:
 
